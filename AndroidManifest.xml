@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.opencv.analogicalnexus.facedetect"
+          android:versionCode="2"
+          android:versionName="alpha">
+
+    <application
+        android:label="@string/appname1"
+        android:icon="@drawable/customlogo"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+        <activity android:name="com.opencv.analogicalnexus.facedetect.FdActivity"
+                  android:label="@string/appname1"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+                  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+         <activity android:name="com.opencv.analogicalnexus.facedetect.fist"
+                  android:label="@string/appname1"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+                  
+            
+            
+        </activity>
+         <activity android:name="com.opencv.analogicalnexus.facedetect.palm"
+                  android:label="@string/appname1"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            
+        </activity>
+        <activity android:name="com.opencv.analogicalnexus.facedetect.vsign"
+                  android:label="@string/appname1"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            
+        </activity>
+         <activity android:name="com.opencv.analogicalnexus.facedetect.msign"
+                  android:label="@string/appname1"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            
+        </activity>
+         <activity android:name="com.opencv.analogicalnexus.facedetect.wsign"
+                  android:label="@string/appname1"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            
+        </activity>
+        <activity android:name="com.opencv.analogicalnexus.facedetect.contact"
+                  android:label="@string/appname1"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            
+        </activity>
+         
+    </application>
+
+    <supports-screens android:resizeable="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:anyDensity="true" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
+
+</manifest>
